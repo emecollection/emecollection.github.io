@@ -79,6 +79,42 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* BOTONES FLOTANTES */
+    .float-btn {
+      position: fixed;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      z-index: 999;
+      transition: transform 0.2s;
+    }
+    .float-btn:hover {
+      transform: scale(1.1);
+    }
+    .float-btn img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* WhatsApp */
+    .whatsapp {
+      bottom: 20px;
+      background: #25D366;
+    }
+
+    /* Instagram */
+    .instagram {
+      bottom: 90px;
+      background: #E1306C;
+    }
+
     footer {
       background-color: #000;
       padding: 2rem 1rem;
@@ -138,14 +174,32 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
+
     <div class="cta">
       <p style="margin-bottom:1.5rem; color:#ccc;">Agenda tu cita o consulta sin compromiso</p>
+
+      <!-- BOTÓN EMAIL -->
       <a href="mailto:contacto@tumarca.com">Escríbenos</a>
     </div>
   </section>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a class="float-btn whatsapp" 
+     href="https://wa.me/34655665363?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20joyer%C3%ADa%20o%20tatuajes." 
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- BOTÓN INSTAGRAM -->
+  <a class="float-btn instagram" 
+     href="https://instagram.com/elisa.e.m" 
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  </a>
 
   <footer>
     <p>© 2026 Joyería & Tatuajes · Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
+
